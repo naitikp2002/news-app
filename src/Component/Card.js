@@ -11,23 +11,27 @@ export default function MultiActionAreaCard({val}) {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="180"
           image={val.urlToImage}
           alt="green iguana"
         />
+      
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography className="desc" gutterBottom variant="h6" component="div" >
             {val.title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography className="desc1" variant="body2" color="text.secondary">
             {val.description}
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary"onClick={()=> window.open(val.url, "_blank")}>
-          Share
+      <CardActions maxWidth='100%'>
+        <Button size="small" color="primary" onClick={()=> window.open(val.url, "_blank")}>
+           Read More
         </Button>
+        <Typography width='70%' align='right' variant="caption" display="block" gutterBottom>
+        {val.author}
+      </Typography>
       </CardActions>
     </Card>
   );
