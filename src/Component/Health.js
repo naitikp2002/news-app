@@ -6,7 +6,7 @@ import '.././App.css';
 import MultiActionAreaCard from './Card';
 
 function Health() {
-    const baseURL = "https://newsapi.org/v2/top-headlines?country=ca&category=health&apiKey=64c84a3969e1463a9faa859ad5fd021c";
+    const baseURL = "https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=64c84a3969e1463a9faa859ad5fd021c";
 
     const [data, setData] = useState([]);
 
