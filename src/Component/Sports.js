@@ -4,7 +4,9 @@ import { useState } from 'react';
 import axios from 'axios';
 import '.././App.css';
 import MultiActionAreaCard from './Card';
-function About({baseURL}) {
+
+function Sports() {
+    const baseURL = "https://newsapi.org/v2/top-headlines?country=ca&category=sports&apiKey=64c84a3969e1463a9faa859ad5fd021c";
     const [data, setData] = useState([]);
 
     useEffect(() => {
@@ -14,13 +16,13 @@ function About({baseURL}) {
     },[]);
     return (
       <div className='style'>
-          {data.map((val,index)=>{
+          {data.map((val,key)=>{
               return(
-                <MultiActionAreaCard val={val}/>
-                )
+              < MultiActionAreaCard val={val}/>
+              )
           })}
       </div>
   )
 }
 
-export default About
+export default Sports

@@ -7,11 +7,13 @@ function NavBar() {
     <div><>
     <Navbar bg="light" variant="light">
       <Container>
-      <Navbar.Brand href="/home">Navbar</Navbar.Brand>
+      <Navbar.Brand href="/business">Navbar</Navbar.Brand>
       <Nav className="me-auto">
-        <Nav.Link href="/home">Home</Nav.Link>
-        <Nav.Link href="/about">About</Nav.Link>
-        <Nav.Link href="/contact">Contact</Nav.Link>
+        <Nav.Link href="/business">Business</Nav.Link>
+        <Nav.Link href="/entertainment">Entertainment</Nav.Link>
+        <Nav.Link href="/health">Health</Nav.Link>
+        <Nav.Link href="/science">Science</Nav.Link>
+        <Nav.Link href="/sports">Sports</Nav.Link>
       </Nav>
       </Container>
     </Navbar>
