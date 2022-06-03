@@ -7,21 +7,23 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 
 export default function MultiActionAreaCard({val}) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345 , marginBottom: 5  }} onClick={()=>{console.log(val.author)}}>
       <CardActionArea>
         <CardMedia
           component="img"
-          height="180"
+          height="auto"
           image={val.urlToImage}
-          alt="green iguana"
+          alt=""
         />
-      
         <CardContent>
           <Typography className="desc" gutterBottom variant="h6" component="div" >
             {val.title}
           </Typography>
           <Typography className="desc1" variant="body2" color="text.secondary">
             {val.description}
+          </Typography>
+          <Typography className="desc1" variant="body2" color="text.secondary">
+            {val.content}
           </Typography>
         </CardContent>
       </CardActionArea>

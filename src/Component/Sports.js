@@ -6,7 +6,7 @@ import '.././App.css';
 import MultiActionAreaCard from './Card';
 
 function Sports() {
-    const baseURL = "https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=64c84a3969e1463a9faa859ad5fd021c";
+    const baseURL = "https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=7e1033e81fa541d3a41583e5ef18425e";
     const [data, setData] = useState([]);
 
     useEffect(() => {

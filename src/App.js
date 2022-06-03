@@ -10,9 +10,9 @@ import Sports from './Component/Sports';
 
 
 function App() {
-  const Business = "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=64c84a3969e1463a9faa859ad5fd021c&q=india";
-  const Entertainment = "https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=64c84a3969e1463a9faa859ad5fd021c&q=india";
-  // const technology = "https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=64c84a3969e1463a9faa859ad5fd021c&q=india";
+  const Business = "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=7e1033e81fa541d3a41583e5ef18425e&q=india";
+  const Entertainment = "https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=7e1033e81fa541d3a41583e5ef18425e&q=india";
+  // const technology = "https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=7e1033e81fa541d3a41583e5ef18425e&q=india";
 
   return (
     <div className="App">
@@ -20,6 +20,7 @@ function App() {
       <Routes>
               <Route path="/" element={<Home baseURL={Business}/>}/>
               <Route path="/business" element={<Home baseURL={Business}/>}/>
+              <Route path="/business/:bid" element={<Home baseURL={Business}/>}/>
               <Route path="/entertainment" element={<About baseURL={Entertainment} />}/>
               <Route path="/health" element={<Health />}/>
               <Route path="/science" element={<Science />}/>
