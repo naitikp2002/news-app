@@ -19,7 +19,7 @@ function App() {
       <NavBar/> 
       <Routes>
               <Route path="/" element={<Home baseURL={request}/>}/>
-              <Route path="/business" element={<Home baseURL={Business}/>}/>
+              <Route path="/business" element={<Home baseURL={request}/>}/>
               <Route path="/entertainment" element={<About baseURL={Entertainment} />}/>
               <Route path="/health" element={<Health />}/>
               <Route path="/science" element={<Science />}/>
